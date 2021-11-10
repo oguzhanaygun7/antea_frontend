@@ -1,0 +1,68 @@
+<div class="footer one">
+  <div class="container">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <i class="fa fa-whatsapp"></i>
+      <a href="https://wa.me/{{ 'telNoLink' | translate }}">{{ 'telNo' | translate }}</a>
+    </div>
+    <div style="text-align: right;" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <a href="https://wa.me/{{ 'telNoLink' | translate }}" class="btn btn_wp">WHATSAPP</a>
+    </div>
+  </div>
+</div>
+<div class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-xs-12">
+        <div class="footer_widgets">
+          <h3 class="title logo">
+            <a [routerLink]="['..']">
+              <img src="./assets/images/anteaclinic.png" class="img-fluid" alt="logo">
+            </a>
+          </h3>
+          <div class="content-widgets">
+            <p>{{'footerText'| translate}}</p>
+            <a href="http://www.facebook.com/" class="social"><span class="fa fa-facebook"></span></a>
+            <a href="http://www.instagram.com/" class="social"><span class="fa fa-instagram"></span></a>
+            <a href="http://twitter.com/" class="social"><span class="fa fa-twitter"></span></a>
+            <a href="http://www.youtube.com" class="social"><span class="fa fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="footer_widgets">
+          <h3 class="title">{{'contact'|translate}}</h3>
+          <div class="content_widgets">
+            <div class="text_box">
+              <span class="fa fa-phone"></span>
+              {{ 'telNo' | translate }}
+            </div>
+            <div class="text_box">
+              <span class="fa fa-envelope"></span>
+              info@anteaclinic.com
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="footer_widgets">
+          <h3 class="title">{{'letUsCallYou'|translate}}</h3>
+          <div class="content_widgets">
+            <form>
+              <input type="email" name="email" placeholder="{{'phoneNumber'|translate}}" />
+              <button class="sub_btn" type="submit"><span class="fa fa-send"></span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer two mb-5 mb-xl-0">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <a href="http://goozif.com">
+        <img width="80px" src="./assets/images/goozif-logo.png">
+      </a> {{'developedBy'| translate}} Copyright © 2020 Anteaclinic.
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+
+<div lang="{{'lang'|translate}}"><router-outlet
+  ></router-outlet>
+  </div>
+
+  <div id="mobilFooter" class="d-block d-xl-none">
+    <div class="mobilExtraArea">
+        <a href="https://wa.me/+905077945838" class="whatsapp" onclick="return gtag_whatsapp('https://wa.me/+90507794583');">
+        <span><i class="fa fa-whatsapp"></i>Whatsapp</span>
+        </a>
+        <a href="" id="popup-form-open1" class="offer">
+            <span> <i class="fa fa-calendar"></i>{{'makeAnAppointment'|translate}}</span>
+        </a>
+    </div>
+  </div>
+
+  <div id="wpscroll" class="d-none d-xl-block">
+    <i class="fa fa-whatsapp icon"></i>
+    <div class="text">
+      <a href="https://wa.me/{{'telNoLink'|translate}}"></a>
+      <span class="whatsapp">WHATSAPP</span>
+      <span>{{'telNo'|translate}}</span>
+      <div class="bg"></div>
+    </div>
+  </div>
+
+  <!-- scroll top - to top page -->
+  <div class="to-top" id="scrollUp"><i class="fa fa-angle-up"></i></div>
+
+  <!-- search box -->
+  <div class="searchBox">
+    <span class="searchBox-close">&times;</span>
+    <form>
+        <input type="search" placeholder="{{'searchText'|translate}}">
+        <button type="submit">
+            <svg width="24.71" height="25.687" viewBox="0 0 24.71 24.687">
+                <path id="search.svg" class="cls-2"
+                    d="M1144.4,440.468l8.19,8.178-3.47,3.467-8.19-8.178,1.18-1.177-1.38-1.385a7.878,7.878,0,1,1,1.11-1.11l1.38,1.383Zm-2.36-5.172a6.29,6.29,0,1,0-6.29,6.282A6.293,6.293,0,0,0,1142.04,435.3Zm8.33,13.35-3.61-3.6-1.24,1.245,3.6,3.6Zm-5.97-3.465,1.25-1.246-1.25-1.245-1.24,1.245Zm-11.79-9.885h-1.57a4.715,4.715,0,0,1,4.71-4.712v1.57A3.146,3.146,0,0,0,1132.61,435.3Z"
+                    transform="translate(-1127.88 -427.438)" /></svg>
+                    {{'search'|translate}}
+        </button>
+    </form>
+  </div>
+
+
+    <!-- Popup Form -->
+    <div class="popup-form">
+      <div class="inner-block">
+          <span class="popup-form-close" id="popup-form-close">&times;</span>
+          <div class="img">
+              <img src="./assets/images/jpg/popup-form.jpg">
+          </div>
+          <form>
+            <h1 class="section-title">{{'makeAnAppointment'|translate}}</h1>
+            <div class="input-box">
+                <label for="popup-name">{{'nameSurname'|translate}} *</label>
+                <input type="text" id="popup-name" name="name" [(ngModel)]="formModel.name" required>
+            </div>
+
+            <div class="input-box">
+                <label for="popup-email">{{'email'|translate}} *</label>
+                <input type="text" id="popup-email" name="email" [(ngModel)]="formModel.mail" required>
+            </div>
+
+            <div class="input-box">
+                <label for="popup-phone">{{'phoneNumber'|translate}} *</label>
+                <input type="tel" id="popup-phone" name="phone" [(ngModel)]="formModel.phone" required>
+            </div>
+
+            <button (click)="sendMail()" [disabled]="formModel.name==''||
+            formModel.mail==''||
+            formModel.phone==''
+            " type="submit" class="btn btn-2_pink">{{'send'|translate}}</button>
+        </form>
+      </div>
+  </div>
