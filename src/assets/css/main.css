@@ -8470,8 +8470,8 @@ a:hover {
 }
 
 .specialists-2 > .container > .specialists-2__card .specialists-2__carousel-item > div {
-  max-height: 600px;
-  max-width: 520px;
+  /* max-height: 600px;
+  max-width: 520px; */
   width: 100%;
 }
 
